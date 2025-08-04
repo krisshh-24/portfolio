@@ -16,7 +16,7 @@ const Contact = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      await axios.post("http://localhost:5008/send", data);
+      await axios.post("api/send", data);
       alert("Message sent successfully!");
       reset();
     } catch (error) {

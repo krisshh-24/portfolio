@@ -1,2 +1,10 @@
 node_modules
-.env
+npm-debug.log
+yarn-error.log
+
+# Build folders
+frontend/build
+frontend/dist
+backend/node_modules
+
+*.env
