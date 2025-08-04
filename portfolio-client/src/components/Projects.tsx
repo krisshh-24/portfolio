@@ -14,7 +14,7 @@ const projects = [
     description: "AI-driven SaaS App video clipping tool for content creators.",
     tech: ["Next.js", "Tailwind", "AI APIs"],
     image: "Smartcut.png",
-    demoLink: "",
+    demoLink: "https://smartcut-inky.vercel.app/sign-in?redirect_url=https%3A%2F%2Fsmartcut-inky.vercel.app%2F",
     githubLink: "https://github.com/krisshh-24/image-edit-saas",
   },
   {
