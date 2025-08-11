@@ -4,8 +4,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-6 py-20 bg-gradient-to-br from-zinc-950 via-black to-zinc-950 relative overflow-hidden"
     >
+      {/* Subtle Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,_rgba(255,255,255,0.01)_1px,_transparent_1px),_linear-gradient(to_bottom,_rgba(255,255,255,0.01)_1px,_transparent_1px)] bg-[size:80px_80px]" />
+      
+      {/* Minimal Accent Lines */}
+      <div className="absolute top-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-700/50 to-transparent" />
+      <div className="absolute bottom-20 left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-700/50 to-transparent" />
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,10 +27,10 @@ const About = () => {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-gray-900 montserrat">
+          <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-white montserrat">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gray-700 mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-blue-400 mx-auto rounded-full" />
         </motion.div>
 
         {/* Cards Section */}
@@ -36,8 +42,8 @@ const About = () => {
           className="grid gap-8 mb-12"
         >
           {/* Intro */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-2xl transition ">
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed lekton-regular ">
+          <div className="bg-zinc-950/80 backdrop-blur-sm rounded-2xl p-8 border border-zinc-800/30 hover:border-zinc-700/50 transition-all duration-300">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed lekton-regular ">
               I'm Krish Sagar, a passionate
              full-stack web developer and
               final-year B.Tech student at BIT Mesra. My expertise lies in
@@ -49,11 +55,11 @@ const About = () => {
           {/* Two Columns */}
           <div className="grid md:grid-cols-2 gap-6">
             {/* Technical Excellence */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-2xl transition ">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 montserrat">
+            <div className="bg-zinc-950/80 backdrop-blur-sm rounded-2xl p-6 border border-zinc-800/30 hover:border-zinc-700/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4 montserrat">
                 Technical Excellence
               </h3>
-              <p className="text-lg text-gray-600 leading-relaxed lekton-regular ">
+              <p className="text-lg text-gray-300 leading-relaxed lekton-regular ">
                 Hands-on experience with real-world projects including
                AI-integrated solutions, an
                E-Waste Rover, and unique products like
@@ -63,11 +69,11 @@ const About = () => {
             </div>
 
             {/* Beyond Code */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-2xl transition ">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 montserrat">
+            <div className="bg-zinc-950/80 backdrop-blur-sm rounded-2xl p-6 border border-zinc-800/30 hover:border-zinc-700/50 transition-all duration-300">
+              <h3 className="text-xl font-semibold text-white mb-4 montserrat">
                 Beyond Code
               </h3>
-              <p className="text-lg text-gray-600 leading-relaxed lekton-regular ">
+              <p className="text-lg text-gray-300 leading-relaxed lekton-regular ">
                 Passionate about
                traveling,
                football, and
@@ -77,8 +83,8 @@ const About = () => {
           </div>
 
           {/* Vision */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-2xl transition ">
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed lekton-regular ">
+          <div className="bg-zinc-950/80 backdrop-blur-sm rounded-2xl p-8 border border-zinc-800/30 hover:border-zinc-700/50 transition-all duration-300">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed lekton-regular ">
               My ultimate goal is to combine
              technology,
              design, and
@@ -93,7 +99,7 @@ const About = () => {
           {/* Button 1: Dark */}
           <a
             href="#contact"
-            className="relative h-20 w-72 flex items-center justify-center bg-neutral-900 text-white font-bold rounded-lg text-lg border border-transparent hover:border-gray-700 hover:bg-gray-800 transition-all shadow-lg hover:shadow-2xl"
+            className="relative h-20 w-72 flex items-center justify-center bg-white text-black font-bold rounded-lg text-lg border border-transparent hover:border-gray-300 hover:bg-gray-100 transition-all shadow-lg hover:shadow-2xl"
           >
             Contact Me
           </a>
@@ -102,7 +108,7 @@ const About = () => {
           <a
             href="/Krish_Sagar_Resume.pdf"
             download="Krish_Sagar_Resume.pdf"
-            className="relative h-20 w-72 flex items-center justify-center bg-white text-gray-900 font-bold rounded-lg text-lg border border-gray-300 hover:bg-gray-100 hover:border-gray-500 transition-all duration-300 shadow-lg hover:shadow-2xl"
+            className="relative h-20 w-72 flex items-center justify-center bg-transparent text-white font-bold rounded-lg text-lg border border-gray-600 hover:bg-white hover:text-black hover:border-white transition-all duration-300 shadow-lg hover:shadow-2xl"
           >
             Download Resume
           </a>
@@ -129,7 +135,7 @@ const About = () => {
             ].map((skill) => (
               <span
                 key={skill}
-                className="bg-gray-100 px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-200 transition"
+                className="bg-zinc-800/50 border border-gray-700 px-4 py-2 rounded-full text-sm font-medium text-gray-300 hover:bg-zinc-700/50 hover:text-white transition"
               >
                 {skill}
               </span>
